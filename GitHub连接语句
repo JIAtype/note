@@ -1,0 +1,28 @@
+在本地文件夹中打开终端，初始化一个Git仓库
+cd /path/to/your/local/folder
+git init
+
+关联本地仓库与GitHub仓库，使用git remote命令，将本地仓库与GitHub上的远程仓库关联起来。将<GitHub Repository URL>替换为你的GitHub仓库的HTTPS或SSH URL。
+在GitHub粘贴语句。
+
+添加和提交文件：添加文件到Git的暂存区，并提交到本地仓库
+git add .
+git commit -m "Initial commit"  # 替换为你的提交信息
+
+推送到GitHub：将本地仓库的更改推送到GitHub上的远程仓库。首次推送时，需要指定分支名称（通常是main或master）。
+git push -u origin main  # 或者 git push -u origin master
+
+更新已有的文件并推送更改：如果你已经在本地仓库中做了更改或添加了新文件，再次使用git add和git commit来记录这些更改，然后推送到GitHub。
+git add .
+git commit -m "Update files"  # 替换为你的提交信息
+git push origin main  # 或者 git push origin master
+
+拉取最新更改（如果远程仓库有更新）：如果你希望同步远程仓库的最新更改，可以使用git pull。
+git pull origin main  # 或者 git pull origin master
+
+如果你计划将本地文件夹连接到一个新的GitHub仓库或其他远程仓库，以下是简单的步骤：
+   git remote remove origin
+**添加新的远程仓库**：
+   git remote add origin <new-repository-url> 
+**推送到新的仓库**：
+   git push -u origin main  # 或者 master
