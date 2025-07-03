@@ -1,0 +1,828 @@
+PS D:\aiml\cv> & D:/aiml/skc_ai/venv_skc_ai/Scripts/python.exe d:/aiml/cv/mscdae_v2.py
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-46: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 563, in run_demo
+    model = MSCDAE(levels=3, patch_size=64, stride=32, batch_size=32, epochs=30, learning_rate=0.001, noise_prob=0.05, gamma=3.0)
+  File "d:\aiml\cv\mscdae_v2.py", line 173, in __init__
+    logger.info(f"初始化MSCDAE模型: 金字塔层级={levels}, 设备={device}")
+Message: '初始化MSCDAE模型: 金字塔层级=3, 设备=cpu'
+Arguments: ()
+2025-04-22 15:02:28,897 - __main__ - INFO - 初始化MSCDAE模型: 金字塔层级=3, 设备=cpu
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-47: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 566, in run_demo
+    model.train(f"{base_dir}/data/ac_samples")
+  File "d:\aiml\cv\mscdae_v2.py", line 177, in train
+    logger.info(f"开始训练: 图像目录={image_dir}")
+Message: '开始训练: 图像目录=D:/aiml/cv/data/ac_samples'
+Arguments: ()
+2025-04-22 15:02:28,902 - __main__ - INFO - 开始训练: 图像目录=D:/aiml/cv/data/ac_samples
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-50: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 566, in run_demo
+    model.train(f"{base_dir}/data/ac_samples")
+  File "d:\aiml\cv\mscdae_v2.py", line 195, in train
+    logger.info(f"训练金字塔层级 {level + 1}/{self.levels}")
+Message: '训练金字塔层级 1/3'
+Arguments: ()
+2025-04-22 15:02:28,908 - __main__ - INFO - 训练金字塔层级 1/3
+2025-04-22 15:02:37,241 - __main__ - INFO -   Epoch 1/30, Loss: 0.072678
+2025-04-22 15:02:44,439 - __main__ - INFO -   Epoch 2/30, Loss: 0.048894
+2025-04-22 15:02:50,651 - __main__ - INFO -   Epoch 3/30, Loss: 0.027736
+2025-04-22 15:02:57,578 - __main__ - INFO -   Epoch 4/30, Loss: 0.015405
+2025-04-22 15:03:05,661 - __main__ - INFO -   Epoch 5/30, Loss: 0.010417
+2025-04-22 15:03:12,932 - __main__ - INFO -   Epoch 6/30, Loss: 0.007949
+2025-04-22 15:03:22,470 - __main__ - INFO -   Epoch 7/30, Loss: 0.006703
+2025-04-22 15:03:33,937 - __main__ - INFO -   Epoch 8/30, Loss: 0.005883
+2025-04-22 15:03:43,431 - __main__ - INFO -   Epoch 9/30, Loss: 0.005548
+2025-04-22 15:03:49,926 - __main__ - INFO -   Epoch 10/30, Loss: 0.005046
+2025-04-22 15:03:55,963 - __main__ - INFO -   Epoch 11/30, Loss: 0.004635
+2025-04-22 15:04:03,871 - __main__ - INFO -   Epoch 12/30, Loss: 0.004216
+2025-04-22 15:04:10,105 - __main__ - INFO -   Epoch 13/30, Loss: 0.003992
+2025-04-22 15:04:16,128 - __main__ - INFO -   Epoch 14/30, Loss: 0.003730
+2025-04-22 15:02:37,241 - __main__ - INFO -   Epoch 1/30, Loss: 0.072678
+2025-04-22 15:02:44,439 - __main__ - INFO -   Epoch 2/30, Loss: 0.048894
+2025-04-22 15:02:50,651 - __main__ - INFO -   Epoch 3/30, Loss: 0.027736
+2025-04-22 15:02:57,578 - __main__ - INFO -   Epoch 4/30, Loss: 0.015405
+2025-04-22 15:03:05,661 - __main__ - INFO -   Epoch 5/30, Loss: 0.010417
+2025-04-22 15:03:12,932 - __main__ - INFO -   Epoch 6/30, Loss: 0.007949
+2025-04-22 15:03:22,470 - __main__ - INFO -   Epoch 7/30, Loss: 0.006703
+2025-04-22 15:03:33,937 - __main__ - INFO -   Epoch 8/30, Loss: 0.005883
+2025-04-22 15:03:43,431 - __main__ - INFO -   Epoch 9/30, Loss: 0.005548
+2025-04-22 15:03:49,926 - __main__ - INFO -   Epoch 10/30, Loss: 0.005046
+2025-04-22 15:03:55,963 - __main__ - INFO -   Epoch 11/30, Loss: 0.004635
+2025-04-22 15:04:03,871 - __main__ - INFO -   Epoch 12/30, Loss: 0.004216
+2025-04-22 15:04:10,105 - __main__ - INFO -   Epoch 13/30, Loss: 0.003992
+2025-04-22 15:04:16,128 - __main__ - INFO -   Epoch 14/30, Loss: 0.003730
+2025-04-22 15:03:22,470 - __main__ - INFO -   Epoch 7/30, Loss: 0.006703
+2025-04-22 15:03:33,937 - __main__ - INFO -   Epoch 8/30, Loss: 0.005883
+2025-04-22 15:03:43,431 - __main__ - INFO -   Epoch 9/30, Loss: 0.005548
+2025-04-22 15:03:49,926 - __main__ - INFO -   Epoch 10/30, Loss: 0.005046
+2025-04-22 15:03:55,963 - __main__ - INFO -   Epoch 11/30, Loss: 0.004635
+2025-04-22 15:04:03,871 - __main__ - INFO -   Epoch 12/30, Loss: 0.004216
+2025-04-22 15:04:10,105 - __main__ - INFO -   Epoch 13/30, Loss: 0.003992
+2025-04-22 15:04:16,128 - __main__ - INFO -   Epoch 14/30, Loss: 0.003730
+2025-04-22 15:03:55,963 - __main__ - INFO -   Epoch 11/30, Loss: 0.004635
+2025-04-22 15:04:03,871 - __main__ - INFO -   Epoch 12/30, Loss: 0.004216
+2025-04-22 15:04:10,105 - __main__ - INFO -   Epoch 13/30, Loss: 0.003992
+2025-04-22 15:04:16,128 - __main__ - INFO -   Epoch 14/30, Loss: 0.003730
+2025-04-22 15:04:10,105 - __main__ - INFO -   Epoch 13/30, Loss: 0.003992
+2025-04-22 15:04:16,128 - __main__ - INFO -   Epoch 14/30, Loss: 0.003730
+2025-04-22 15:04:16,128 - __main__ - INFO -   Epoch 14/30, Loss: 0.003730
+2025-04-22 15:04:23,595 - __main__ - INFO -   Epoch 15/30, Loss: 0.003968
+2025-04-22 15:04:29,630 - __main__ - INFO -   Epoch 16/30, Loss: 0.003683
+2025-04-22 15:04:35,769 - __main__ - INFO -   Epoch 17/30, Loss: 0.003310
+2025-04-22 15:04:43,206 - __main__ - INFO -   Epoch 18/30, Loss: 0.003173
+2025-04-22 15:04:49,235 - __main__ - INFO -   Epoch 19/30, Loss: 0.003288
+2025-04-22 15:04:55,305 - __main__ - INFO -   Epoch 20/30, Loss: 0.003389
+2025-04-22 15:05:03,434 - __main__ - INFO -   Epoch 21/30, Loss: 0.003281
+2025-04-22 15:05:10,598 - __main__ - INFO -   Epoch 22/30, Loss: 0.002847
+2025-04-22 15:05:16,939 - __main__ - INFO -   Epoch 23/30, Loss: 0.002678
+2025-04-22 15:05:24,919 - __main__ - INFO -   Epoch 24/30, Loss: 0.002636
+2025-04-22 15:05:31,444 - __main__ - INFO -   Epoch 25/30, Loss: 0.002572
+2025-04-22 15:05:38,964 - __main__ - INFO -   Epoch 26/30, Loss: 0.002523
+2025-04-22 15:05:46,808 - __main__ - INFO -   Epoch 27/30, Loss: 0.002632
+2025-04-22 15:05:53,927 - __main__ - INFO -   Epoch 28/30, Loss: 0.002452
+2025-04-22 15:06:02,433 - __main__ - INFO -   Epoch 29/30, Loss: 0.002503
+2025-04-22 15:06:10,096 - __main__ - INFO -   Epoch 30/30, Loss: 0.002453
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-45: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 566, in run_demo
+    model.train(f"{base_dir}/data/ac_samples")
+  File "d:\aiml\cv\mscdae_v2.py", line 281, in train
+    logger.info(f"层级 {level + 1} 统计: Mean={mean_error:.6f}, Std={std_error:.6f}, Threshold={threshold:.6f}")
+Message: '层级 1 统计: Mean=0.008633, Std=0.015678, Threshold=0.055666'
+Arguments: ()
+2025-04-22 15:06:10,104 - __main__ - INFO - 层级 1 统计: Mean=0.008633, Std=0.015678, Threshold=0.055666
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-50: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 566, in run_demo
+    model.train(f"{base_dir}/data/ac_samples")
+  File "d:\aiml\cv\mscdae_v2.py", line 195, in train
+    logger.info(f"训练金字塔层级 {level + 1}/{self.levels}")
+Message: '训练金字塔层级 2/3'
+Arguments: ()
+2025-04-22 15:06:10,110 - __main__ - INFO - 训练金字塔层级 2/3
+2025-04-22 15:06:11,640 - __main__ - INFO -   Epoch 1/30, Loss: 0.070898
+2025-04-22 15:06:13,170 - __main__ - INFO -   Epoch 2/30, Loss: 0.050584
+2025-04-22 15:06:14,931 - __main__ - INFO -   Epoch 3/30, Loss: 0.030965
+2025-04-22 15:06:16,851 - __main__ - INFO -   Epoch 4/30, Loss: 0.023777
+2025-04-22 15:06:18,349 - __main__ - INFO -   Epoch 5/30, Loss: 0.015066
+2025-04-22 15:06:20,154 - __main__ - INFO -   Epoch 6/30, Loss: 0.011308
+2025-04-22 15:06:21,737 - __main__ - INFO -   Epoch 7/30, Loss: 0.010322
+2025-04-22 15:06:23,000 - __main__ - INFO -   Epoch 8/30, Loss: 0.009181
+2025-04-22 15:06:24,295 - __main__ - INFO -   Epoch 9/30, Loss: 0.009228
+2025-04-22 15:06:25,480 - __main__ - INFO -   Epoch 10/30, Loss: 0.008214
+2025-04-22 15:06:26,683 - __main__ - INFO -   Epoch 11/30, Loss: 0.007176
+2025-04-22 15:06:27,991 - __main__ - INFO -   Epoch 12/30, Loss: 0.006360
+2025-04-22 15:06:29,222 - __main__ - INFO -   Epoch 13/30, Loss: 0.006208
+2025-04-22 15:06:30,529 - __main__ - INFO -   Epoch 14/30, Loss: 0.005564
+2025-04-22 15:06:31,858 - __main__ - INFO -   Epoch 15/30, Loss: 0.005204
+2025-04-22 15:06:33,403 - __main__ - INFO -   Epoch 16/30, Loss: 0.004799
+2025-04-22 15:06:34,758 - __main__ - INFO -   Epoch 17/30, Loss: 0.004762
+2025-04-22 15:06:36,379 - __main__ - INFO -   Epoch 18/30, Loss: 0.004570
+2025-04-22 15:06:37,906 - __main__ - INFO -   Epoch 19/30, Loss: 0.004492
+2025-04-22 15:06:39,440 - __main__ - INFO -   Epoch 20/30, Loss: 0.004700
+2025-04-22 15:06:41,044 - __main__ - INFO -   Epoch 21/30, Loss: 0.004173
+2025-04-22 15:06:42,354 - __main__ - INFO -   Epoch 22/30, Loss: 0.003951
+2025-04-22 15:06:43,609 - __main__ - INFO -   Epoch 23/30, Loss: 0.003837
+2025-04-22 15:06:44,749 - __main__ - INFO -   Epoch 24/30, Loss: 0.004032
+2025-04-22 15:06:46,030 - __main__ - INFO -   Epoch 25/30, Loss: 0.004420
+2025-04-22 15:06:47,211 - __main__ - INFO -   Epoch 26/30, Loss: 0.004795
+2025-04-22 15:06:48,412 - __main__ - INFO -   Epoch 27/30, Loss: 0.005013
+2025-04-22 15:06:49,699 - __main__ - INFO -   Epoch 28/30, Loss: 0.004633
+2025-04-22 15:06:50,905 - __main__ - INFO -   Epoch 29/30, Loss: 0.004087
+2025-04-22 15:06:52,146 - __main__ - INFO -   Epoch 30/30, Loss: 0.003972
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-45: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 566, in run_demo
+    model.train(f"{base_dir}/data/ac_samples")
+  File "d:\aiml\cv\mscdae_v2.py", line 281, in train
+    logger.info(f"层级 {level + 1} 统计: Mean={mean_error:.6f}, Std={std_error:.6f}, Threshold={threshold:.6f}")
+Message: '层级 2 统计: Mean=0.010728, Std=0.014662, Threshold=0.054716'
+Arguments: ()
+2025-04-22 15:06:52,146 - __main__ - INFO - 层级 2 统计: Mean=0.010728, Std=0.014662, Threshold=0.054716
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-50: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 566, in run_demo
+    model.train(f"{base_dir}/data/ac_samples")
+  File "d:\aiml\cv\mscdae_v2.py", line 195, in train
+    logger.info(f"训练金字塔层级 {level + 1}/{self.levels}")
+Message: '训练金字塔层级 3/3'
+Arguments: ()
+2025-04-22 15:06:52,162 - __main__ - INFO - 训练金字塔层级 3/3
+2025-04-22 15:06:52,471 - __main__ - INFO -   Epoch 1/30, Loss: 0.068524
+2025-04-22 15:06:52,748 - __main__ - INFO -   Epoch 2/30, Loss: 0.061161
+2025-04-22 15:06:52,987 - __main__ - INFO -   Epoch 3/30, Loss: 0.046794
+2025-04-22 15:06:53,228 - __main__ - INFO -   Epoch 4/30, Loss: 0.032652
+2025-04-22 15:06:53,480 - __main__ - INFO -   Epoch 5/30, Loss: 0.025226
+2025-04-22 15:06:53,780 - __main__ - INFO -   Epoch 6/30, Loss: 0.016608
+2025-04-22 15:06:54,036 - __main__ - INFO -   Epoch 7/30, Loss: 0.014449
+2025-04-22 15:06:54,319 - __main__ - INFO -   Epoch 8/30, Loss: 0.012931
+2025-04-22 15:06:54,659 - __main__ - INFO -   Epoch 9/30, Loss: 0.011223
+2025-04-22 15:06:55,300 - __main__ - INFO -   Epoch 11/30, Loss: 0.010397
+2025-04-22 15:06:55,615 - __main__ - INFO -   Epoch 12/30, Loss: 0.009447
+2025-04-22 15:06:55,883 - __main__ - INFO -   Epoch 13/30, Loss: 0.007772
+2025-04-22 15:06:56,248 - __main__ - INFO -   Epoch 14/30, Loss: 0.007399
+2025-04-22 15:06:57,101 - __main__ - INFO -   Epoch 15/30, Loss: 0.007217
+2025-04-22 15:06:57,455 - __main__ - INFO -   Epoch 16/30, Loss: 0.007156
+2025-04-22 15:06:57,789 - __main__ - INFO -   Epoch 17/30, Loss: 0.006214
+2025-04-22 15:06:58,097 - __main__ - INFO -   Epoch 18/30, Loss: 0.005936
+2025-04-22 15:06:58,412 - __main__ - INFO -   Epoch 19/30, Loss: 0.005866
+2025-04-22 15:06:58,949 - __main__ - INFO -   Epoch 20/30, Loss: 0.006382
+2025-04-22 15:06:59,532 - __main__ - INFO -   Epoch 21/30, Loss: 0.005651
+2025-04-22 15:06:59,931 - __main__ - INFO -   Epoch 22/30, Loss: 0.005455
+2025-04-22 15:07:00,313 - __main__ - INFO -   Epoch 23/30, Loss: 0.005274
+2025-04-22 15:07:00,627 - __main__ - INFO -   Epoch 24/30, Loss: 0.005257
+2025-04-22 15:07:00,974 - __main__ - INFO -   Epoch 25/30, Loss: 0.005091
+2025-04-22 15:07:01,284 - __main__ - INFO -   Epoch 26/30, Loss: 0.005012
+2025-04-22 15:07:01,626 - __main__ - INFO -   Epoch 27/30, Loss: 0.004794
+2025-04-22 15:07:01,924 - __main__ - INFO -   Epoch 28/30, Loss: 0.004629
+2025-04-22 15:07:02,194 - __main__ - INFO -   Epoch 29/30, Loss: 0.004743
+2025-04-22 15:07:02,452 - __main__ - INFO -   Epoch 30/30, Loss: 0.004560
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-45: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 566, in run_demo
+    model.train(f"{base_dir}/data/ac_samples")
+  File "d:\aiml\cv\mscdae_v2.py", line 281, in train
+    logger.info(f"层级 {level + 1} 统计: Mean={mean_error:.6f}, Std={std_error:.6f}, Threshold={threshold:.6f}")
+Message: '层级 3 统计: Mean=0.013649, Std=0.016023, Threshold=0.061717'
+Arguments: ()
+2025-04-22 15:07:02,453 - __main__ - INFO - 层级 3 统计: Mean=0.013649, Std=0.016023, Threshold=0.061717
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-47: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 566, in run_demo
+    model.train(f"{base_dir}/data/ac_samples")
+  File "d:\aiml\cv\mscdae_v2.py", line 283, in train
+    logger.info("训练完成")
+Message: '训练完成'
+Arguments: ()
+2025-04-22 15:07:02,456 - __main__ - INFO - 训练完成
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-48: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 569, in run_demo
+    model.save_model(f"{base_dir}/models/mscdae_model")
+  File "d:\aiml\cv\mscdae_v2.py", line 306, in save_model
+    logger.info(f"模型保存至: {save_dir}")
+Message: '模型保存至: D:/aiml/cv/models/mscdae_model'
+Arguments: ()
+2025-04-22 15:07:02,479 - __main__ - INFO - 模型保存至: D:/aiml/cv/models/mscdae_model
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-49: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 477, in test_batch_images
+    logger.info(f"批量测试图像: {image_dir}")
+Message: '批量测试图像: D:/aiml/cv/data/test_samples'
+Arguments: ()
+2025-04-22 15:07:02,493 - __main__ - INFO - 批量测试图像: D:/aiml/cv/data/test_samples
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-47: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 329, in detect
+    logger.info(f"检测图像: {image_path}")
+Message: '检测图像: D:/aiml/cv/data/test_samples\\aa.png'
+Arguments: ()
+2025-04-22 15:07:02,499 - __main__ - INFO - 检测图像: D:/aiml/cv/data/test_samples\aa.png
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-50: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 349, in detect
+    logger.info(f"处理金字塔层级 {level + 1}/{self.levels}")
+Message: '处理金字塔层级 1/3'
+Arguments: ()
+2025-04-22 15:07:02,511 - __main__ - INFO - 处理金字塔层级 1/3
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-50: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 349, in detect
+    logger.info(f"处理金字塔层级 {level + 1}/{self.levels}")
+Message: '处理金字塔层级 2/3'
+Arguments: ()
+2025-04-22 15:07:02,907 - __main__ - INFO - 处理金字塔层级 2/3
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-50: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 349, in detect
+    logger.info(f"处理金字塔层级 {level + 1}/{self.levels}")
+Message: '处理金字塔层级 3/3'
+Arguments: ()
+2025-04-22 15:07:02,981 - __main__ - INFO - 处理金字塔层级 3/3
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-47: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 472, in detect
+    logger.info(f"检测结果: {'NC' if is_nc else 'AC'}, 缺陷比例: {defect_ratio:.6f}")
+Message: '检测结果: AC, 缺陷比例: 0.001083'
+Arguments: ()
+2025-04-22 15:07:08,104 - __main__ - INFO - 检测结果: AC, 缺陷比例: 0.001083
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-47: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 329, in detect
+    logger.info(f"检测图像: {image_path}")
+Message: '检测图像: D:/aiml/cv/data/test_samples\\nc1.png'
+Arguments: ()
+2025-04-22 15:07:08,119 - __main__ - INFO - 检测图像: D:/aiml/cv/data/test_samples\nc1.png
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-50: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 349, in detect
+    logger.info(f"处理金字塔层级 {level + 1}/{self.levels}")
+Message: '处理金字塔层级 1/3'
+Arguments: ()
+2025-04-22 15:07:08,134 - __main__ - INFO - 处理金字塔层级 1/3
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-50: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 349, in detect
+    logger.info(f"处理金字塔层级 {level + 1}/{self.levels}")
+Message: '处理金字塔层级 2/3'
+Arguments: ()
+2025-04-22 15:07:08,431 - __main__ - INFO - 处理金字塔层级 2/3
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-50: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 349, in detect
+    logger.info(f"处理金字塔层级 {level + 1}/{self.levels}")
+Message: '处理金字塔层级 3/3'
+Arguments: ()
+2025-04-22 15:07:08,494 - __main__ - INFO - 处理金字塔层级 3/3
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-47: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 472, in detect
+    logger.info(f"检测结果: {'NC' if is_nc else 'AC'}, 缺陷比例: {defect_ratio:.6f}")
+Message: '检测结果: AC, 缺陷比例: 0.005127'
+Arguments: ()
+2025-04-22 15:07:13,000 - __main__ - INFO - 检测结果: AC, 缺陷比例: 0.005127
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-47: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 329, in detect
+    logger.info(f"检测图像: {image_path}")
+Message: '检测图像: D:/aiml/cv/data/test_samples\\nn2.png'
+Arguments: ()
+2025-04-22 15:07:13,012 - __main__ - INFO - 检测图像: D:/aiml/cv/data/test_samples\nn2.png
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-50: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 349, in detect
+    logger.info(f"处理金字塔层级 {level + 1}/{self.levels}")
+Message: '处理金字塔层级 1/3'
+Arguments: ()
+2025-04-22 15:07:13,031 - __main__ - INFO - 处理金字塔层级 1/3
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-50: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 349, in detect
+    logger.info(f"处理金字塔层级 {level + 1}/{self.levels}")
+Message: '处理金字塔层级 2/3'
+Arguments: ()
+2025-04-22 15:07:13,377 - __main__ - INFO - 处理金字塔层级 2/3
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-50: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 349, in detect
+    logger.info(f"处理金字塔层级 {level + 1}/{self.levels}")
+Message: '处理金字塔层级 3/3'
+Arguments: ()
+2025-04-22 15:07:13,456 - __main__ - INFO - 处理金字塔层级 3/3
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-47: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 472, in detect
+    logger.info(f"检测结果: {'NC' if is_nc else 'AC'}, 缺陷比例: {defect_ratio:.6f}")
+Message: '检测结果: AC, 缺陷比例: 0.004700'
+Arguments: ()
+2025-04-22 15:07:18,949 - __main__ - INFO - 检测结果: AC, 缺陷比例: 0.004700
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-47: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 329, in detect
+    logger.info(f"检测图像: {image_path}")
+Message: '检测图像: D:/aiml/cv/data/test_samples\\nn3.png'
+Arguments: ()
+2025-04-22 15:07:18,955 - __main__ - INFO - 检测图像: D:/aiml/cv/data/test_samples\nn3.png
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-50: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 349, in detect
+    logger.info(f"处理金字塔层级 {level + 1}/{self.levels}")
+Message: '处理金字塔层级 1/3'
+Arguments: ()
+2025-04-22 15:07:18,972 - __main__ - INFO - 处理金字塔层级 1/3
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-50: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 349, in detect
+    logger.info(f"处理金字塔层级 {level + 1}/{self.levels}")
+Message: '处理金字塔层级 2/3'
+Arguments: ()
+2025-04-22 15:07:19,302 - __main__ - INFO - 处理金字塔层级 2/3
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-50: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 349, in detect
+    logger.info(f"处理金字塔层级 {level + 1}/{self.levels}")
+Message: '处理金字塔层级 3/3'
+Arguments: ()
+2025-04-22 15:07:19,359 - __main__ - INFO - 处理金字塔层级 3/3
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-47: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 472, in detect
+    logger.info(f"检测结果: {'NC' if is_nc else 'AC'}, 缺陷比例: {defect_ratio:.6f}")
+Message: '检测结果: AC, 缺陷比例: 0.002747'
+Arguments: ()
+2025-04-22 15:07:23,972 - __main__ - INFO - 检测结果: AC, 缺陷比例: 0.002747
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-47: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 329, in detect
+    logger.info(f"检测图像: {image_path}")
+Message: '检测图像: D:/aiml/cv/data/test_samples\\nn4.png'
+Arguments: ()
+2025-04-22 15:07:23,974 - __main__ - INFO - 检测图像: D:/aiml/cv/data/test_samples\nn4.png
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-50: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 349, in detect
+    logger.info(f"处理金字塔层级 {level + 1}/{self.levels}")
+Message: '处理金字塔层级 1/3'
+Arguments: ()
+2025-04-22 15:07:23,984 - __main__ - INFO - 处理金字塔层级 1/3
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-50: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 349, in detect
+    logger.info(f"处理金字塔层级 {level + 1}/{self.levels}")
+Message: '处理金字塔层级 2/3'
+Arguments: ()
+2025-04-22 15:07:24,228 - __main__ - INFO - 处理金字塔层级 2/3
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-50: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 349, in detect
+    logger.info(f"处理金字塔层级 {level + 1}/{self.levels}")
+Message: '处理金字塔层级 3/3'
+Arguments: ()
+2025-04-22 15:07:24,286 - __main__ - INFO - 处理金字塔层级 3/3
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 44-47: character maps to <undefined>
+Call stack:
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 499, in test_batch_images
+    result = self.detect(image_path, image_output_dir)
+  File "d:\aiml\cv\mscdae_v2.py", line 472, in detect
+    logger.info(f"检测结果: {'NC' if is_nc else 'AC'}, 缺陷比例: {defect_ratio:.6f}")
+Message: '检测结果: AC, 缺陷比例: 0.000854'
+Arguments: ()
+2025-04-22 15:07:29,132 - __main__ - INFO - 检测结果: AC, 缺陷比例: 0.000854
+Traceback (most recent call last):
+  File "d:\aiml\cv\mscdae_v2.py", line 576, in <module>
+    run_demo()
+  File "d:\aiml\cv\mscdae_v2.py", line 572, in run_demo
+    model.test_batch_images(f"{base_dir}/data/test_samples", f"{base_dir}/results/test_results")
+  File "d:\aiml\cv\mscdae_v2.py", line 526, in test_batch_images
+    f.write(f"测试时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 0-3: character maps to <undefined>
