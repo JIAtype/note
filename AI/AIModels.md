@@ -6,3 +6,5 @@
 
 - [a16z GenAI Top 100 Apps](https://a16z.com/100-gen-ai-apps-4/)
 最受欢迎的 GenAI 应用（如 ChatGPT、Midjourney、Perplexity 等）
+
+- [Hugging Face Model](https://huggingface.co/models)
