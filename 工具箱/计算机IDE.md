@@ -1,5 +1,6 @@
 # VS Code插件
 - GitHub Copilot Chat
+用GitHub账号登陆
 - Data Wrangler
 - Docker
 - Jupyter

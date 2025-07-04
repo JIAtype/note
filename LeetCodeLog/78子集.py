@@ -79,3 +79,13 @@ print(subsets(nums2))  # 输出 [[], [0]]
 '''
 以下是代码
 '''
+class Solution:
+    def subsets(self, nums: List[int]) -> List[List[int]]:
+        res = [[]]
+        for i in nums:
+            new_list = []
+            for num in res:
+                new_list.append([i] + num)# 将[i]和num拼接，插入新列表
+            res = res + new_list
+            # res = res + [[i] + num for num in res]
+        return res

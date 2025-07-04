@@ -1,21 +1,32 @@
 # 在Anaconda Prompt里 指定位置创建虚拟环境
 
+## 每个新项目都要创建新环境！！！
+
+在anaconda prompt里运行
+```
+conda create --prefix D:\AI\my_envs\nanonets-ocr python=3.10
+```
+在terminal运行
+```
+conda activate D:\AI\my_envs\nanonets-ocr
+pip install torch torchvision transformers timm pillow
+```
 ### 创建环境到D盘
-
+```
 conda create --prefix D:\my_envs\yolo8 python=3.10
-
+```
 ### 激活环境
-
+```
 conda activate D:\my_envs\yolo8
-
+```
 ### 安装包（例如安装numpy）
-
+```
 conda install numpy
-
+```
 ### 退出环境
-
+```
 conda deactivate
-
+```
 ---
 
 # 检查conda安装
