@@ -874,6 +874,67 @@ Auto ML现在我们有了自动化机器学习这样的工具，对那些了解�
 所以，给他们一些时间和能力去准备。
 我认为在很多情况下，你都需要有人负责这项重要的能力，例如在你的组织内运营一个卓越中心或人工智能中心。
 
+《Only Humans Need Apply: Winners and Losers in the Age of Smart Machines》是由Thomas H. Davenport和Julia Kirby合著的一本书，探讨了自动化和人工智能对未来工作的影响。作者指出，随着技术的进步，许多工作岗位可能被自动化取代，包括知识型工作者，如作家、律师、助理和医疗技术人员等。然而，他们强调，尽管机器可以执行许多任务，但人类的创造力、同理心和批判性思维等独特技能仍然至关重要。因此，作者提出了“增强智能”的概念，主张人类与机器合作，利用技术提升工作效率和质量，而非将其视为竞争对手。他们认为，未来的成功将取决于人类和机器的协同合作，共同解决复杂问题。 ([leaderself.com](https://leaderself.com/summary/only-humans-need-apply-thomas-h-davenport-and-julia-kirby/?utm_source=openai)) 
+
+# 书本解析说明
+Only Humans Need Apply by Thomas H. Davenport and Julia Kirby
+Last updated: Jul 20, 2023
+
+Summary of Only Humans Need Apply by Thomas H. Davenport and Julia Kirby
+Only Humans Need Apply by Thomas H. Davenport and Julia Kirby is a book that explores the impact of automation and artificial intelligence (AI) on the future of work. The authors argue that while many jobs will be automated, there will still be a need for human skills and abilities in the workforce.
+
+The book begins by discussing the history of automation and how it has evolved over time. The authors explain that automation has traditionally been used to replace repetitive and mundane tasks, but recent advancements in AI and machine learning have allowed for the automation of more complex tasks.
+
+Davenport and Kirby then delve into the various ways in which automation is already being used in different industries. They provide examples of how AI is being used in healthcare, finance, and customer service, among others. The authors also discuss the potential benefits and drawbacks of automation, such as increased efficiency and productivity, but also potential job displacement.
+
+One of the key arguments made in the book is that while automation may replace certain jobs, it will also create new opportunities for human workers. The authors emphasize the importance of developing and cultivating skills that are uniquely human, such as creativity, empathy, and critical thinking. They argue that these skills will become increasingly valuable in a world where automation is prevalent.
+
+The book also addresses the fear and anxiety that many people have about the future of work. Davenport and Kirby acknowledge that automation will lead to job displacement for some individuals, but they also highlight the potential for new job creation and the need for lifelong learning and adaptation.
+
+In the final chapters of the book, the authors provide practical advice for individuals and organizations on how to navigate the changing landscape of work. They suggest strategies for identifying and developing skills that are in high demand, as well as ways to stay relevant and competitive in a world where automation is becoming increasingly prevalent.
+
+Overall, Only Humans Need Apply offers a comprehensive and balanced exploration of the impact of automation and AI on the future of work. The authors provide valuable insights and practical guidance for individuals and organizations looking to thrive in an increasingly automated world.
+
+1. The Rise of Augmented Intelligence
+In "Only Humans Need Apply," Davenport and Kirby introduce the concept of augmented intelligence, which refers to the collaboration between humans and machines to enhance decision-making and problem-solving capabilities. They argue that instead of fearing the replacement of humans by machines, we should focus on how humans can leverage technology to augment their own skills and expertise. By embracing augmented intelligence, individuals and organizations can achieve better outcomes and create new opportunities.
+
+One example of augmented intelligence is the use of machine learning algorithms to analyze large datasets and provide insights to human decision-makers. These algorithms can identify patterns and correlations that humans may overlook, enabling more informed and data-driven decision-making. However, it is crucial to remember that humans still play a vital role in interpreting and applying these insights, as they possess the contextual understanding and ethical judgment that machines lack.
+
+2. The Importance of Human Skills
+While technology continues to advance rapidly, Davenport and Kirby emphasize the enduring value of human skills in the workplace. They argue that certain skills, such as creativity, empathy, and critical thinking, are difficult to automate and will become increasingly valuable in the future. These skills enable humans to excel in areas where machines struggle, such as complex problem-solving, innovation, and building meaningful relationships.
+
+Moreover, the authors highlight the importance of continuous learning and adaptability in a world where technology is constantly evolving. They encourage individuals to develop a growth mindset and embrace lifelong learning to stay relevant and thrive in the age of automation. By combining technical expertise with human skills, individuals can differentiate themselves and contribute unique value to their organizations.
+
+3. The Need for Human-Machine Collaboration
+Davenport and Kirby argue that the most successful organizations will be those that foster effective collaboration between humans and machines. They emphasize the importance of designing systems and processes that enable seamless integration and interaction between humans and AI technologies. This collaboration should be based on a clear understanding of each party's strengths and limitations.
+
+For example, humans excel at tasks that require creativity, intuition, and emotional intelligence, while machines excel at tasks that involve data analysis, pattern recognition, and repetitive tasks. By leveraging the complementary strengths of humans and machines, organizations can achieve higher productivity, efficiency, and innovation. However, it is crucial to establish a balance and avoid overreliance on machines, as human judgment and ethical considerations are still essential in decision-making.
+
+4. The Ethical Implications of AI
+Davenport and Kirby delve into the ethical implications of AI and automation in "Only Humans Need Apply." They highlight the importance of considering the potential biases, unintended consequences, and ethical dilemmas that may arise when relying on AI technologies. They argue that humans must take responsibility for the decisions made by AI systems and ensure that they align with ethical principles and societal values.
+
+Furthermore, the authors emphasize the need for transparency and explainability in AI systems. As AI becomes more prevalent in decision-making processes, it is crucial to understand how these systems arrive at their conclusions and recommendations. This transparency enables humans to assess the reliability and fairness of AI systems and make informed decisions.
+
+5. The Future of Work
+Davenport and Kirby explore the potential impact of automation on the future of work. They argue that while automation may eliminate certain jobs, it also creates new opportunities and shifts the nature of work. They suggest that individuals should focus on developing skills that are difficult to automate, such as creativity, problem-solving, and emotional intelligence.
+
+Moreover, the authors discuss the concept of "hybrid" jobs, which involve a combination of human and machine tasks. They predict that these hybrid jobs will become increasingly prevalent, requiring individuals to collaborate effectively with AI technologies. This shift in the nature of work necessitates a mindset of continuous learning and adaptability to remain employable and thrive in the changing labor market.
+
+6. The Role of Leadership in the Age of AI
+Davenport and Kirby emphasize the critical role of leadership in navigating the challenges and opportunities presented by AI and automation. They argue that leaders must understand the potential of AI technologies and how they can be effectively integrated into their organizations. They should also foster a culture of experimentation, learning, and collaboration to leverage the benefits of augmented intelligence.
+
+Furthermore, the authors highlight the importance of ethical leadership in the age of AI. Leaders must ensure that AI systems are used responsibly and ethically, considering the potential biases and unintended consequences. They should also communicate transparently with employees about the impact of AI on their roles and provide support for upskilling and reskilling to adapt to the changing demands of the workforce.
+
+7. The Impact on Education and Learning
+Davenport and Kirby discuss the implications of AI and automation on education and learning. They argue that traditional education models need to evolve to equip individuals with the skills and mindset required in the age of automation. They suggest that education should focus on developing human skills, such as critical thinking, creativity, and emotional intelligence, which are difficult to automate.
+
+The authors also emphasize the importance of lifelong learning and continuous skill development. As technology continues to advance, individuals must embrace a growth mindset and actively seek opportunities to learn and adapt. They suggest that organizations should support employees' learning journeys by providing access to training programs, mentorship, and resources for upskilling and reskilling.
+
+8. The Societal Impact of Automation
+Davenport and Kirby explore the broader societal impact of automation in "Only Humans Need Apply." They discuss the potential implications for income inequality, job displacement, and social dynamics. While automation may lead to job losses in certain sectors, it also has the potential to create new jobs and industries.
+
+The authors argue that society must address the challenges posed by automation through policies and initiatives that promote inclusive growth and support affected individuals. They suggest measures such as universal basic income, retraining programs, and investment in education and infrastructure. By proactively addressing the societal impact of automation, we can ensure a more equitable and sustainable future.
+
 # 1.6.2.Discussion: The Impact of AI on Jobs and Skills
 
 # 1.7.1.Video: How Does AI Support Platforms?人工智能如何真正支持或实现基于现代平台的商业模式。
