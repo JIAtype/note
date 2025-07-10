@@ -4,3 +4,6 @@
 grok
 
 flowith，没有幻觉？
+
+https://www.genspark.ai/
+好像很好用
