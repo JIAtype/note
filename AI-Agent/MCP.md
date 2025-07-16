@@ -16,6 +16,14 @@ MCP 是一种开放协议，它使 AI 模型能够通过标准化的服务器实
 
 ---
 
+[面向 Claude 桌面应用MCP使用指南](https://zhuanlan.zhihu.com/p/17395202545)
+
+https://zhuanlan.zhihu.com/p/27327515233
+
+MCP 的主要目的在于解决当前 AI 模型因数据孤岛限制而无法充分发挥潜力的难题，MCP 使得 AI 应用能够安全地访问和操作本地及远程数据，为 AI 应用提供了连接万物的接口。
+
+---
+
 Ah, the Model Context Protocol (MCP). It's related to the LambdaMOO programming environment used in multi-user environments like MUDs (multi-user dungeons). MCP is a protocol designed to facilitate extended communications between a server (like a MUD server) and a client by encapsulating messages and sending structured data.
 
 **Usage of MCP:**

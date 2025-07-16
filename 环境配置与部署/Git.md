@@ -312,3 +312,53 @@ git push origin main
 
 ---
 
+要把 dev 分支的 10 个 commit 合并成一个提交到 main 上，可以用 git rebase 交互式变基 先整理提交历史，再合并到 main，步骤如下：
+
+1. 确保 dev 分支是最新的
+
+先拉取远程 main 的最新代码，避免冲突：
+# 切到 main 分支，拉取最新更新
+git checkout main
+git pull origin main
+
+# 切回 dev 分支，把 main 的最新代码合并到 dev（确保 dev 基于最新 main）
+git checkout dev
+git merge main
+# 如果有冲突，解决后提交：git add . && git commit -m "解决合并冲突"
+2. 交互式变基，把 10 个 commit 合并成 1 个
+
+用 git rebase -i 操作最近的 10 个提交（HEAD~10 表示从当前 HEAD 往前数 10 个）：
+git rebase -i HEAD~10
+执行后会弹出编辑器，里面列出了这 10 个 commit（从上到下是旧到新）：
+pick a1b2c3d 第一个提交信息
+pick e4f5g6h 第二个提交信息
+...
+pick x7y8z9w 第十个提交信息
+修改方式：
+
+• 把第 2 到第 10 行的 pick 改成 squash（或缩写 s），表示“把这些提交合并到上一个提交”；
+
+• 只保留第 1 行的 pick（作为合并后的根提交）。
+
+修改后类似：
+pick a1b2c3d 第一个提交信息
+squash e4f5g6h 第二个提交信息
+squash ... ...
+...
+squash x7y8z9w 第十个提交信息
+保存退出编辑器，会进入第二个编辑界面，让你填写合并后的新提交信息（可以总结这 10 个提交的内容），填写后保存退出，变基完成。
+
+3. 推送到 dev 分支（注意需要强制推送，因为修改了历史）
+
+变基后提交历史改变，需要强制推送到远程 dev（如果之前推过）：
+git push origin dev --force-with-lease  # 比 --force 更安全，避免覆盖别人的修改
+4. 合并到 main 分支
+
+最后把整理好的 dev 合并到 main，此时只会产生一个提交：
+git checkout main
+git merge dev  # 因为 dev 基于最新 main，这里通常是快进合并
+git push origin main
+这样操作后，main 分支上就只会有一个来自 dev 的合并提交，历史更整洁～ 如果中间遇到变基冲突，解决后用 git add . 标记 resolved，再 git rebase --continue 继续即可。
+
+---
+

@@ -1,3 +1,4 @@
+[如何打造你自己的 AI 软件工程师（像 Devin 那样）](https://blog.csdn.net/weixin_37044549/article/details/148179020)
 
 Devin是认知实验室cognition-labs推出的号称第一个人工智能软件工程师。
 

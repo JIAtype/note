@@ -46,8 +46,6 @@ RAG（Retrieval-Augmented Generation）是一种结合信息检索和文本生�
 
 总之，RAG 模型的外部文档可以根据具体需求和实施选择来自不同的来源。
 
----
-
 RAG（检索增强生成）的使用流程：
 
 1. RAG核心组件：
