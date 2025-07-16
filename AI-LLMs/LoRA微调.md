@@ -48,3 +48,17 @@ trainer.train()
 # 保存LoRA模型
 model.save_pretrained("lora_model")
 ```
+
+---
+
+在LoRA（Low-Rank Adaptation）微调中，通常会修改模型的特定层或模块以降低计算成本和存储需求。具体来说，以下几个模块是常见的修改目标：
+
+1. **嵌入层（Embedding Layers）**: 对词嵌入进行低秩调整，以减少模型参数。
+
+2. **自注意力层（Self-Attention Layers）**: 这是 transformer 架构中的核心部分，通常会对这些层进行 LoRA 微调。通过对注意力权重进行低秩处理，可以有效地适应特定任务。
+
+3. **前馈层（Feed-Forward Layers）**: 在 transformer 模型中的每个编码器和解码器层中，前馈层也是一个重要的调整目标。
+
+4. **输出层（Output Layers）**: 在某些情况下，微调输出层也可以包括 LoRA，以增强特定任务的性能。
+
+通过在这些模块中应用 LoRA，模型能够在保持大部分参数不变的情况下，快速适应新任务，从而实现高效的微调。

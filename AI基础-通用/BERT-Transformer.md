@@ -121,3 +121,17 @@ BERT：
 3. BERT的预训练需要大量文本数据
 4. 实际使用时建议使用预训练好的模型，而不是从头训练
 5. 可以使用Hugging Face的transformers库来简化BERT的实现
+
+预训练任务：
+Masked Language Model
+Next Sentence Prediction
+
+微调机制：
+根据下游任务微调预训练好的BERT模型。
+添加特定的输出层，在该任务的标注数据上进行预训练，更新模型参数和新增的输出层参数。
+
+常见下游任务：
+文本分类
+命名实体分类
+问答系统
+

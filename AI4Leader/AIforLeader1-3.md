@@ -296,10 +296,10 @@ cj:人工技能技术是很多技术的结合，可以实现一些fancy的工具
 
 In 2013, the MD Anderson Cancer Center launched a “moon shot” project: diagnose and recommend treatment plans for certain forms of cancer using IBM’s Watson cognitive system. But in 2017, the project was put on hold after costs topped $62 million—and the system had yet to be used on patients. At the same time, the cancer center’s IT group was experimenting with using cognitive technologies to do much less ambitious jobs, such as making hotel and restaurant recommendations for patients’ families, determining which patients needed help paying bills, and addressing staff IT problems. The results of these projects have been much more promising: The new systems have contributed to increased patient satisfaction, improved financial performance, and a decline in time spent on tedious data entry by the hospital’s care managers. Despite the setback on the moon shot, MD Anderson remains committed to using cognitive technology—that is, next-generation artificial intelligence—to enhance cancer treatment, and is currently developing a variety of new projects at its center of competency for cognitive computing.
 
-cj: 订阅了才能看，没交钱不看了。
+cj: 订阅了才能看
 
 # 1.1.3.Knowledge Check: What is AI?
-cj: 交钱才能答。。。
+cj: 订阅了才能看
 
 # 1.2.1.Natural Language AI Applications
 So natural language is one of the key applications of AI.
