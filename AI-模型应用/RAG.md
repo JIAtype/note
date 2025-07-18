@@ -1,4 +1,6 @@
-RAG（Retrieval-Augmented Generation）是一种结合信息检索和文本生成的模型，其工作机制主要可以分为以下几个步骤：
+[RAG（Retrieval-Augmented Generation）](https://en.wikipedia.org/wiki/Retrieval-augmented_generation#:~:text=Retrieval%2Daugmented%20generation%20(RAG),LLM's%20pre%2Dexisting%20training%20data.)是一种结合信息检索和文本生成的模型，其工作机制主要可以分为以下几个步骤：
+
+![alt text](image.png)
 
 1. **输入处理**:
    - 用户输入一个查询或问题，该输入会被送入 RAG 模型。
