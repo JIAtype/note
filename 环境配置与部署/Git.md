@@ -1,3 +1,21 @@
+# [官方说明书](https://git-scm.com/book/zh/v2/%e8%b5%b7%e6%ad%a5-%e5%85%b3%e4%ba%8e%e7%89%88%e6%9c%ac%e6%8e%a7%e5%88%b6)
+
+# 简化流程
+Git 别名
+在终端运行一次即可永久生效：
+
+```bash
+git config --global alias.acp '!git add . && git commit -m "auto commit $(date +%Y-%m-%d_%H:%M:%S)" && git push'
+```
+
+以后只需要：
+
+```bash
+git acp
+```
+
+就能一键完成 add、commit（带时间戳）、push。
+
 # 当Git 本地仓库发生冲突时，需要手动解决。
 1. 确认冲突:
 当执行 git pull 或 git merge 等操作时，如果Git 检测到冲突，它会提示你哪些文件发生了冲突。
